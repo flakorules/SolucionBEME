@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CEA1FD93-6700-46CB-96CF-C791D105BAA6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BEME.Business</RootNamespace>
+    <AssemblyName>BEMEBusiness</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BancaDerivacionBL.cs" />
+    <Compile Include="BaseBL.cs" />
+    <Compile Include="ClienteAntiguoBL.cs" />
+    <Compile Include="FamiliaProductosBL.cs" />
+    <Compile Include="LogClienteAntiguoBL.cs" />
+    <Compile Include="LogPersonaJuridicaBL.cs" />
+    <Compile Include="LogPersonaNaturalBL.cs" />
+    <Compile Include="NivelVentasBL.cs" />
+    <Compile Include="PermanenciaRubroBL.cs" />
+    <Compile Include="PersonaJuridicaBL.cs" />
+    <Compile Include="PersonaNaturalBL.cs" />
+    <Compile Include="PJFamProdProdBL.cs" />
+    <Compile Include="PNFamProdProdBL.cs" />
+    <Compile Include="ProductosDisponiblesBL.cs" />
+    <Compile Include="RequisitosCondicionesBL.cs" />
+    <Compile Include="TipoClienteBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoEmpresaBL.cs" />
+    <Compile Include="TipoFormalidadBL.cs" />
+    <Compile Include="TipoPersonaJuridicaBL.cs" />
+    <Compile Include="UsuariosBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BEMECore\BEMECore.csproj">
+      <Project>{A0755E90-760B-42BF-8B9D-2861895A6E63}</Project>
+      <Name>BEMECore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BEMEDA\BEMEDA.csproj">
+      <Project>{D76DEFE9-87A0-4E9C-8C5F-713BE894F995}</Project>
+      <Name>BEMEDA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BEMEEntities\BEMEEntities.csproj">
+      <Project>{A53075AF-7C82-47BF-A01C-C51C4A41870B}</Project>
+      <Name>BEMEEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BEMEExceptions\BEMEExceptions.csproj">
+      <Project>{AC845AD0-DEFB-4C9B-BC72-59978F77AB8A}</Project>
+      <Name>BEMEExceptions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

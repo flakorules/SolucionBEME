@@ -1,0 +1,226 @@
+﻿body{
+margin:0;
+padding:0;
+line-height: 1.5em;
+font: normal 100% "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+}
+
+b{font-size: 110%;}
+em{color: red;}
+
+
+#topsection{
+background: #FFFFFF;
+height: 90px; /*Height of top section*/
+border-bottom: black 1px solid;
+}
+
+#topsection h1{
+margin: 0;
+padding-top: 15px;
+}
+
+#contentwrapper{
+float: left;
+width: 100%;
+background-color:#FF8700;
+}
+
+#contentcolumn{
+margin-left: 200px; /*Set left margin to LeftColumnWidth*/
+background-color:White;
+}
+
+#leftcolumn{
+float: left;
+width: 200px; /*Width of left column*/
+margin-left: -100%;
+}
+
+#footer{
+clear: left;
+width: 100%;
+background: #b91a28;
+color: #FFF;
+text-align: center;
+padding: 4px 0;
+}
+
+#footer a{
+color: #FFFF80;
+}
+
+.innertube{
+margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+margin-top: 0;
+margin-bottom: 0;
+}
+
+/* ####### responsive layout CSS ####### */
+
+@media (max-width: 600px){ /* responsive layout break point */
+
+	#contentwrapper{
+	float: none;
+	}
+	
+	#leftcolumn{
+	float: none;
+	width: 100%;
+	margin-left: 0;
+	}
+	
+	#contentcolumn{
+	margin-left: 0;
+	}
+}
+
+/**/
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+img {
+	border: none;
+	}
+	
+#menuVertical {
+	width: 180px;
+	margin: 10px;
+	}
+	
+
+	
+#menuVertical li a {
+	height: 32px;
+  	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	height: 24px;
+	text-decoration: none;
+	}	
+	
+
+#menuVertical li a:link, #menuVertical li a:visited {
+	color: #FFF;
+	display: block;
+	background:  url(../Images/MenuVert.gif);
+	padding: 8px 0 0 10px;
+	}
+	
+#menuVertical li a:hover {
+	color: #FFF;
+	background:  url(../Images/MenuVert.gif) 0 -32px;
+	padding: 8px 0 0 10px;
+	}
+	
+#menuVertical li a.activo {
+	color: #FFF;
+	background:  url(../Images/MenuVert.gif) 0 -32px !important;
+	padding: 8px 0 0 10px;
+	}	
+
+ .txt {
+            border: 1px solid black;
+            /*padding: 4px;*/
+            color: #333333;
+            background-color: #ffffff;
+        } 
+            .txt:hover {
+                border-color: #56aff1;
+                background-color: #fff4d8;
+            }
+            
+textarea 
+{
+	border: 1px solid black;
+	font: normal 100% "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+}
+.txt:hover 
+{
+	border-color: #56aff1;
+    background-color: #fff4d8;
+}
+            
+.modalBackground
+    {
+        background-color: Black;
+        filter: alpha(opacity=90);
+        opacity: 0.8;
+    }
+    .modalPopup
+    {
+        background-color: #FFFFFF;
+        border-width: 3px;
+        border-style: solid;
+        border-color: black;
+        padding-top: 10px;
+        padding-left: 10px;
+        width: 300px;
+        height: 140px;
+    }
+    
+    
+    table.inputForm td
+    {
+    	
+    	padding-bottom: 10px;   	
+    	font-size:smaller;
+    	vertical-align:top;
+}
+
+
+.mGrid {  
+    width: 100%;  
+    background-color: #fff;  
+    margin: 5px 0 10px 0;  
+    border: solid 1px black;  
+    border-collapse: collapse;  
+}  
+  
+    .mGrid td {  
+        padding: 2px;  
+        border: solid 1px black;  
+        /*color: #717171;  */
+    }  
+  
+    .mGrid th {  
+        padding: 4px 2px;  
+        color: #fff;  
+        background: orange url(grd_head.png) repeat-x top;  
+        border-left: solid 1px orange;  
+        font-size: 0.9em;  
+    }  
+  
+    .mGrid .alt {  
+        background: #fcfcfc url(grd_alt.png) repeat-x top;  
+    }  
+  
+    .mGrid .pgr {  
+        background: #424242 url(grd_pgr.png) repeat-x top;  
+    }  
+  
+        .mGrid .pgr table {  
+            margin: 5px 0;  
+        }  
+  
+        .mGrid .pgr td {  
+            border-width: 0;  
+            padding: 0 6px;  
+            border-left: solid 1px #666;  
+            font-weight: bold;  
+            color: #fff;  
+            line-height: 12px;  
+        }  
+  
+        .mGrid .pgr a {  
+            color: #666;  
+            text-decoration: none;  
+        }  
+  
+            .mGrid .pgr a:hover {  
+                color: #000;  
+                text-decoration: none;  
+            }
+

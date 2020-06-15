@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BEME.master.cs" Inherits="BEME.Web.BEME" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>BEME</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Style.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" method="post">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+        <Scripts>
+            <asp:ScriptReference Path="~/JS/JSFunctions.js" />
+        </Scripts>
+    </asp:ScriptManager>
+    <div id="maincontainer">
+        <div id="topsection">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo-banco-estado.jpg" />
+            <div class="innertube">
+                <h1>
+                </h1>
+            </div>
+        </div>
+        <div id="contentwrapper">
+            <div id="contentcolumn">
+                <div class="innertube">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+        <div id="leftcolumn">
+            <div class="innertube">
+            </div>
+            <div id="menuVertical">
+                <ul>
+                    <li><a title="Cliente Nuevo" style="font-weight: bold;" href="Ingreso.aspx">Cliente
+                        Nuevo</a> </li>
+                    <li><a title="Cliente Antiguo" style="font-weight: bold;" href="DatosClienteAntiguo.aspx">
+                        Cliente Antiguo</a> </li>
+                    <li><a title="Consulta" style="font-weight: bold;" href="Consulta.aspx">Consulta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+    </div>
+    </form>
+</body>
+</html>

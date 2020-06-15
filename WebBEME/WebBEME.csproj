@@ -1,0 +1,215 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BDFCF61-840D-4982-A64A-6CEA0D2BA553}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BEME.Web</RootNamespace>
+    <AssemblyName>WebBEME</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=1.0.20229.20821, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\Style.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BEME.Master.cs">
+      <DependentUpon>BEME.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BEME.Master.designer.cs">
+      <DependentUpon>BEME.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta.aspx.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consulta.aspx.designer.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaClienteAntiguo.aspx.cs">
+      <DependentUpon>ConsultaClienteAntiguo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaClienteAntiguo.aspx.designer.cs">
+      <DependentUpon>ConsultaClienteAntiguo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaLog.aspx.cs">
+      <DependentUpon>ConsultaLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaLog.aspx.designer.cs">
+      <DependentUpon>ConsultaLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatosClienteAntiguo.aspx.cs">
+      <DependentUpon>DatosClienteAntiguo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatosClienteAntiguo.aspx.designer.cs">
+      <DependentUpon>DatosClienteAntiguo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatosPersonaJuridica.aspx.cs">
+      <DependentUpon>DatosPersonaJuridica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatosPersonaJuridica.aspx.designer.cs">
+      <DependentUpon>DatosPersonaJuridica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatosPersonaNatural.aspx.cs">
+      <DependentUpon>DatosPersonaNatural.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatosPersonaNatural.aspx.designer.cs">
+      <DependentUpon>DatosPersonaNatural.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Informes.aspx.cs">
+      <DependentUpon>Informes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Informes.aspx.designer.cs">
+      <DependentUpon>Informes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ingreso.aspx.cs">
+      <DependentUpon>Ingreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ingreso.aspx.designer.cs">
+      <DependentUpon>Ingreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BEMECore\BEMECore.csproj">
+      <Project>{A0755E90-760B-42BF-8B9D-2861895A6E63}</Project>
+      <Name>BEMECore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BEMEDA\BEMEDA.csproj">
+      <Project>{D76DEFE9-87A0-4E9C-8C5F-713BE894F995}</Project>
+      <Name>BEMEDA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BEMEEntities\BEMEEntities.csproj">
+      <Project>{A53075AF-7C82-47BF-A01C-C51C4A41870B}</Project>
+      <Name>BEMEEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BEMEExceptions\BEMEExceptions.csproj">
+      <Project>{AC845AD0-DEFB-4C9B-BC72-59978F77AB8A}</Project>
+      <Name>BEMEExceptions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BEMEInterfaces\BEMEInterfaces.csproj">
+      <Project>{31749028-C13C-4701-8EE3-FEC811C34341}</Project>
+      <Name>BEMEInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BEMEPresenters\BEMEPresenters.csproj">
+      <Project>{C2934828-0A7C-4985-9197-5CA564B3D907}</Project>
+      <Name>BEMEPresenters</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BEME.Master" />
+    <Content Include="Consulta.aspx" />
+    <Content Include="DatosPersonaJuridica.aspx" />
+    <Content Include="DatosPersonaNatural.aspx" />
+    <Content Include="Download.aspx" />
+    <Content Include="Images\logo-banco-estado.jpg" />
+    <Content Include="Images\MenuVert.gif" />
+    <Content Include="Ingreso.aspx" />
+    <Content Include="JS\JSFunctions.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BD\BEME.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ConsultaClienteAntiguo.aspx" />
+    <Content Include="ConsultaLog.aspx" />
+    <Content Include="DatosClienteAntiguo.aspx" />
+    <Content Include="Documents\peq3.pdf" />
+    <Content Include="Documents\peq4.pdf" />
+    <Content Include="Images\date.png" />
+    <Content Include="Informes.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1255</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
